@@ -40,11 +40,16 @@
             <div class="select">
                 <button class="pay-btn" id="S">Shek</button>
                 <button class="pay-btn" id="P">PayPal</button>
-                <button class="pay-btn" id="Z">Zelle</button>
                 <button class="pay-btn" id="C">CashApp</button>
+                <button class="pay-btn" id="A">Amazon</button>
+                <button class="pay-btn" id="I">iTunes</button>
             </div>
         </div>
-        <div id="shek"></div>
+        <div id="shek">
+            <img class="card-img1" src="img/card.png" alt="">
+            <img class="card-img2" src="img/card2.png" alt="">
+            <img class="card-img3" src="img/card3.png" alt="">
+        </div>
         <div id="paypal">
             <div id="circle2">
                 <img src="" alt="">
@@ -61,15 +66,18 @@
                 </div>
             </div>
         </div>
-        <div id="zelle"></div>
         <div id="cashapp">
             <div id="circle">
-                <h2>$</h2>
+                <h2 id="pfp">$</h2>
             </div>
-            <input type="text" class="person" placeholder="Name">
+            <input type="text" id="person" placeholder="Name">
+            <h2 id="username">Payment to $UserName</h2>
             <input type="text" class="amount" placeholder="$0.00">
             <h2 id="time"></h2>
+            <button id="check">&checkmark; Completed</button>
         </div>
+        <div id="itunes"></div>
+        <div id="amazon"></div>
         <script src="cordova.js"></script>
         <script src="js/index.js"></script>
     </body>

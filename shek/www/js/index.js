@@ -3,6 +3,7 @@ var y = 0;
 
 var moneys = "10.00";
 var names = "Steve Erkel";
+var date = new Date();
 
 document.addEventListener('deviceready', onDeviceReady, false);
 
@@ -24,35 +25,50 @@ document.getElementById('menu').addEventListener('click', function() {
 document.getElementById('S').addEventListener('click', function() {
     document.getElementById('shek').style.display = 'block';
     document.getElementById('paypal').style.display = 'none';
-    document.getElementById('zelle').style.display = 'none';
+    document.getElementById('itunes').style.display = 'none';
     document.getElementById('cashapp').style.display = 'none';
+    document.getElementById('amazon').style.display = 'none';
 });
 
 document.getElementById('P').addEventListener('click', function() {
     document.getElementById('shek').style.display = 'none';
     document.getElementById('paypal').style.display = 'block';
-    document.getElementById('zelle').style.display = 'none';
+    document.getElementById('itunes').style.display = 'none';
     document.getElementById('cashapp').style.display = 'none';
+    document.getElementById('amazon').style.display = 'none';
 });
 
-document.getElementById('Z').addEventListener('click', function() {
+document.getElementById('I').addEventListener('click', function() {
     document.getElementById('shek').style.display = 'none';
     document.getElementById('paypal').style.display = 'none';
-    document.getElementById('zelle').style.display = 'block';
+    document.getElementById('itunes').style.display = 'block';
     document.getElementById('cashapp').style.display = 'none';
+    document.getElementById('amazon').style.display = 'none';
 });
 
 document.getElementById('C').addEventListener('click', function() {
     document.getElementById('shek').style.display = 'none';
     document.getElementById('paypal').style.display = 'none';
-    document.getElementById('zelle').style.display = 'none';
+    document.getElementById('itunes').style.display = 'none';
     document.getElementById('cashapp').style.display = 'block';
+    document.getElementById('amazon').style.display = 'none';
+});
+document.getElementById('A').addEventListener('click', function() {
+    document.getElementById('shek').style.display = 'none';
+    document.getElementById('paypal').style.display = 'none';
+    document.getElementById('itunes').style.display = 'none';
+    document.getElementById('cashapp').style.display = 'none';
+    document.getElementById('amazon').style.display = 'block';
 });
 
 document.getElementById('circle').addEventListener('click', function() {
-    var colors = ['rgb(0, 172, 7)', 'rgb(128, 128, 128)', 'rgb(255, 155, 0)', 'rgb(255, 0, 44)', 'rgb(188, 0, 255)', 'rgb(0, 3, 106)'];
+    var colors = ['rgb(0, 213, 17)', 'rgb(128, 128, 128)', 'rgb(255, 155, 0)', 'rgb(255, 0, 44)', 'rgb(188, 0, 255)', 'rgb(0, 3, 106)'];
     var color = colors[Math.floor(Math.random()*colors.length)];
     document.getElementById('circle').style.backgroundColor = color;
+    var user = document.getElementById('person').value.replace(/\s+/g, '')
+    document.getElementById('username').innerHTML = "Payment to $"+user;
+    document.getElementById('pfp').innerHTML = user.substring(0, 1);
+    document.getElementById('check').style.color = color;
 });
 
 document.getElementById('circle2').addEventListener('click', function() {
@@ -71,3 +87,5 @@ document.getElementById('message').addEventListener('click', function() {
     names = document.getElementById('name').value;
     document.getElementById('message').innerHTML = "You Sent $"+moneys+" to "+names;
 });
+
+document.getElementById('time').innerHTML = "Today at "+date.getHours()+":"+date.getMinutes();
