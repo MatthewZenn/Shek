@@ -24,41 +24,24 @@ document.getElementById('menu').addEventListener('click', function() {
 
 document.getElementById('S').addEventListener('click', function() {
     document.getElementById('shek').style.display = 'block';
-    document.getElementById('paypal').style.display = 'none';
-    document.getElementById('itunes').style.display = 'none';
     document.getElementById('cashapp').style.display = 'none';
-    document.getElementById('amazon').style.display = 'none';
-});
-
-document.getElementById('P').addEventListener('click', function() {
-    document.getElementById('shek').style.display = 'none';
-    document.getElementById('paypal').style.display = 'block';
-    document.getElementById('itunes').style.display = 'none';
-    document.getElementById('cashapp').style.display = 'none';
-    document.getElementById('amazon').style.display = 'none';
-});
-
-document.getElementById('I').addEventListener('click', function() {
-    document.getElementById('shek').style.display = 'none';
-    document.getElementById('paypal').style.display = 'none';
-    document.getElementById('itunes').style.display = 'block';
-    document.getElementById('cashapp').style.display = 'none';
-    document.getElementById('amazon').style.display = 'none';
 });
 
 document.getElementById('C').addEventListener('click', function() {
     document.getElementById('shek').style.display = 'none';
-    document.getElementById('paypal').style.display = 'none';
-    document.getElementById('itunes').style.display = 'none';
     document.getElementById('cashapp').style.display = 'block';
-    document.getElementById('amazon').style.display = 'none';
 });
+
+document.getElementById('P').addEventListener('click', function() {
+    document.getElementById('selection').src = "img/king.png";
+});
+
 document.getElementById('A').addEventListener('click', function() {
-    document.getElementById('shek').style.display = 'none';
-    document.getElementById('paypal').style.display = 'none';
-    document.getElementById('itunes').style.display = 'none';
-    document.getElementById('cashapp').style.display = 'none';
-    document.getElementById('amazon').style.display = 'block';
+    document.getElementById('selection').src = "img/six.png";
+});
+
+document.getElementById('I').addEventListener('click', function() {
+    document.getElementById('selection').src = "img/queen.png";
 });
 
 document.getElementById('circle').addEventListener('click', function() {

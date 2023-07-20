@@ -33,6 +33,28 @@ span {
     display: block;
 }
 
+.logo {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    height: 30px;
+    display: block;
+    transform: translate(50%, 0%);
+}
+
+.add {
+    position: absolute;
+    top: 28%;
+    right: 5%;
+    width: 30px;
+    height: 30px;
+    display: block;
+    color: black;
+    font-size: 25pt;
+    transform: translate(0, -50%);
+    font-weight: 200;
+}
+
 #list {
     position: absolute;
     width: 100%;
@@ -79,26 +101,6 @@ span {
     overflow: hidden;
 }
 
-#paypal {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(236, 236, 236);
-    display: none;
-}
-
-#itunes {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    display: none;
-}
-
 #cashapp {
     position: absolute;
     top: 0;
@@ -106,16 +108,6 @@ span {
     width: 100%;
     height: 100%;
     background-color: rgb(255, 255, 255);
-    display: none;
-}
-
-#amazon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
     display: none;
 }
 
@@ -128,20 +120,6 @@ span {
     height: 80px;
     color: white;
     background-color: grey;
-    border-radius: 100%;
-    text-align: center;
-    font-size: 26pt;
-}
-
-#circle2 {
-    position: absolute;
-    left: 50%;
-    top: 25%;
-    transform: translate(-50%, -50%);
-    width: 80px;
-    height: 80px;
-    color: white;
-    background-color: rgb(75, 75, 75);
     border-radius: 100%;
     text-align: center;
     font-size: 26pt;
@@ -309,24 +287,65 @@ h2 {
     transform: translate(-50%, -50%);
     width: 90%;
     box-shadow: 10px 10px 20px rgb(175, 175, 175);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .card-img2 {
     position: absolute;
-    top: 58%;
+    top: 36%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
     box-shadow: 10px 10px 20px rgb(175, 175, 175);
-    border-radius: 5px;
+    border-radius: 10px;
 }
+
+.card-face {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    box-shadow: 10px 10px 20px rgb(175, 175, 175);
+    border-radius: 10px;
+}
+
 .card-img3 {
     position: absolute;
-    top: 86%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
     box-shadow: 10px 10px 20px rgb(175, 175, 175);
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.card-img4 {
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    box-shadow: 10px 10px 20px rgb(175, 175, 175);
+    border-radius: 10px;
+}
+
+.card-img5 {
+    position: absolute;
+    top: 84%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    box-shadow: 10px 10px 20px rgb(175, 175, 175);
+    border-radius: 10px;
+}
+
+.card-img6 {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    box-shadow: 10px 10px 20px rgb(175, 175, 175);
+    border-radius: 10px;
 }
